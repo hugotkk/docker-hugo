@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+
+  hugo:
+    build: .
+    ports:
+      - 1313:1313
+    volumes:
+    - type: bind
+      source: ./hugotkk.github.io
+      target: /app
+
